@@ -1,7 +1,9 @@
 # Engineering Conversational RAG Agent - Developer Guide
 
 This project is an AI assistant platform designed to help teams find reliable answers quickly from large collections of internal documents. Instead of giving generic chatbot responses, it reads trusted sources, explains answers in plain language, and can show where information came from. It is built to support many users at once, continue conversations naturally, and stay dependable even when one AI provider is unavailable by automatically switching to backups. The system is also packaged for easy local use, monitored for performance, and structured so knowledge updates can be tracked and reproduced over time.
+<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/6abb214e-17f8-43ad-ab47-c473dd628a85" />
 
+This project was deployed on revit with wpf and on Nextjs.
 ## What Is Implemented
 
 - High-concurrency WebSocket serving with per-connection and per-IP limits (`server/connection_manager.py`).
@@ -156,6 +158,7 @@ Current packaging behavior:
 - Core app is built as `installers/chatbot_installer/<app_name>/<app_name>.exe`
 - `index`, `data`, `mock_index`, and `mock_data` are copied post-build into `dist` output
 - `prompts.yaml` and `server_config.json` are explicitly copied
+
 
 ## Testing and Evaluation
 
